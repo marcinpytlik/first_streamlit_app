@@ -3,7 +3,7 @@ import pandas
 import requests
 streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
 streamlit.title('My Parents new Healthy Diner')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.text('Omega 3 & Blueberry Oatmeal')
